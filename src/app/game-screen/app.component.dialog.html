@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Game Over</h1>
+<div mat-dialog-content>
+    <p>Score:{{data.score}}</p>
+    <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]=data cdkFocusInitial>Guardar</button>
+</div>
+<div class="scrollable">
+    <div *ngFor="let item of data.results">
+        <div class="{{item.correct}}">
+            <p>{{item.name}}</p>
+            <p>Correct Answer: {{item.result}}</p>
+        </div>
+    </div>
+</div>

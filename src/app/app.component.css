@@ -1,0 +1,50 @@
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 2em;
+    height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #ffffff;
+}
+
+.svg-icon circle {
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+
+/* footer social media icons */
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.footer-social-media-icon {
+    margin: 0 1em;
+}
+
+.footer-socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+
+/* dark social-media-bar */
+
+.social-media-bar {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em;
+    margin-top: 1em;
+}

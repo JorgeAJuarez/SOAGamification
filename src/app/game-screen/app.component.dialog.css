@@ -1,0 +1,19 @@
+.scrollable {
+    margin: 12px;
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.correcto {
+    margin: 6px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+.incorrecto {
+    margin: 6px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 11, 11);
+}

@@ -1,0 +1,6 @@
+<mat-card class="example-card">
+    <mat-card-title>{{question.question}}</mat-card-title>
+    <mat-card-actions>
+        <button class="answer" mat-button (click)="nextQuestion(item.correct)" *ngFor="let item of question.responses" name="{{item.correct}}">{{item.text}}</button>
+    </mat-card-actions>
+</mat-card>

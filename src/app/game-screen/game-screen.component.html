@@ -1,0 +1,11 @@
+<div class="content mt-4 pt-4" role="upper" fxLayout="row" fxLayout.xs="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+    <div fxFlex="50%" class="mt-2">
+        <app-clock (timeoutEmiter)="gameOver($event)" [initialTime]="config.initialTime"></app-clock>
+    </div>
+    <div fxFlex="50%" class="mt-2">
+        <app-score [score]="score"></app-score>
+    </div>
+</div>
+<div class="content" role="main" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+    <app-question [question]="question" (resultQuestion)="nextQuestion($event)"></app-question>
+</div>
